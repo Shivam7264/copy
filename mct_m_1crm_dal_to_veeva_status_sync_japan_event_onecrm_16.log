@@ -1,0 +1,264 @@
+Agent Group Id: 001Y8X2500000000000F
+Agent Group Name: emea-sa-aws-cloud-ag-001
+Agent Name: xsnl70c223s.pharma.aventis.com
+Agent Id: 001Y8X0800000000000E
+Task Name: mct_m_1crm_dal_to_veeva_status_sync_japan_event_onecrm
+Task Type: MTT
+Task Id: 001Y8X0Z000000000HVJ
+Run Id: 16
+Service Id: 2280987
+Started By: latika.hassija-ext@sanofi.com.saml4
+Run Context Type: REST_API_V2
+04/12/2024 09:09:40 **** Importing Connection: Conn_001Y8X0B0000000000VU ...
+04/12/2024 09:09:40 **** Importing Connection: Conn_001Y8X0B0000000000VW ...
+04/12/2024 09:09:40 **** Importing Source Definition: DUMMY_Source ...
+04/12/2024 09:09:40 **** Importing Target Definition: EM_Event_vod__c ...
+04/12/2024 09:09:40 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  DUMMY_Source...
+    Validating Target Definition  EM_Event_vod__c...
+04/12/2024 09:09:40 **** Importing Mapping: Mapping0 ...
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+    <Warning> :  Invalid table attribute: Exec SQL
+04/12/2024 09:09:40 **** Importing Workflow: wf_mtt_001Y8X0Z000000000HVJ ...
+    <Warning> :  invalid attribute Append if Exists for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000HVJ >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  invalid attribute Header Options for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000HVJ >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  invalid attribute Create Target Directory for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000HVJ >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  invalid attribute Output Type for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000HVJ >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_001Y8X0Z000000000HVJ > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+[Summary for Application Source Qualifier Source]
+     Is a new repartition point.
+     Partition type changed from None to Pass Through.
+Successfully extracted session instance [s_mtt_001Y8X0Z000000000HVJ].  Starting repository sequence id is [585267140]
+======================================================================
+DIRECTOR> VAR_27085 [2024-04-12 09:09:40.765] Parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8X0Z000000000HVJ.param] is opened for [session [wf_mtt_001Y8X0Z000000000HVJ.s_mtt_001Y8X0Z000000000HVJ]].
+DIRECTOR> VAR_27062 [2024-04-12 09:09:40.766] Warning! Cannot find section for worklet [wf_mtt_001Y8X0Z000000000HVJ] and folder [] in parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8X0Z000000000HVJ.param].
+DIRECTOR> TM_6014 [2024-04-12 09:09:40.766] Initializing session [s_mtt_001Y8X0Z000000000HVJ] at [Fri Apr 12 09:09:40 2024].
+DIRECTOR> TM_6683 [2024-04-12 09:09:40.766] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2024-04-12 09:09:40.766] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2024-04-12 09:09:40.766] Folder: []
+DIRECTOR> TM_6685 [2024-04-12 09:09:40.766] Workflow: [wf_mtt_001Y8X0Z000000000HVJ] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2024-04-12 09:09:40.766] Operating System Type [Linux]
+DIRECTOR> TM_6101 [2024-04-12 09:09:40.766] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2024-04-12 09:09:40.767] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2024-04-12 09:09:40.767] Session [s_mtt_001Y8X0Z000000000HVJ] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2024-04-12 09:09:40.805] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2024-04-12 09:09:40.806] Running Partition Group [1].
+MANAGER> PETL_24000 [2024-04-12 09:09:40.806] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2024-04-12 09:09:40.806] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2024-04-12 09:09:40.806] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2024-04-12 09:09:40.806] Initializing session run.
+MAPPING> PETL_24091 [2024-04-12 09:09:40.806] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2024-04-12 09:09:40.808] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2024-04-12 09:09:40.808] Server Code page: [UTF-8 encoding of Unicode]
+MAPPING> TM_6151 [2024-04-12 09:09:40.808] The session sort order is [Binary].
+MAPPING> TM_6185 [2024-04-12 09:09:40.808] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2024-04-12 09:09:40.808] Current Timezone:[UTC +1:0]
+MAPPING> CMN_65111 [2024-04-12 09:09:40.808] Current Process ID:[17897]
+MAPPING> TM_6155 [2024-04-12 09:09:40.808] Using HIGH precision processing.
+MAPPING> TM_6180 [2024-04-12 09:09:40.808] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2024-04-12 09:09:40.808] Session target-based commit interval is [10000].
+MAPPING> PMJVM_42020 [2024-04-12 09:09:40.816] [INFO] Loaded library : /software/ICSA/apps/jdk/zulu8.70.0.52-sa-fx-jdk8.0.372/jre/lib/amd64/server/libjvm.so.
+MAPPING> PMJVM_42009 [2024-04-12 09:09:40.902] [INFO] Created Java VM successfully.
+MAPPING> SDKS_38029 [2024-04-12 09:09:40.967] Loaded plug-in 601301: [plugin description].
+MAPPING> SDKS_38024 [2024-04-12 09:09:40.998] Plug-in 601301 initialization complete.
+MAPPING> SDKS_38016 [2024-04-12 09:09:40.998] Reader SDK plug-in initialization complete.
+MAPPING> SDKS_38029 [2024-04-12 09:09:41.002] Loaded plug-in 500100: [plugin description].
+MAPPING> SDKS_38024 [2024-04-12 09:09:41.010] Plug-in 500100 initialization complete.
+MAPPING> SDKS_38017 [2024-04-12 09:09:41.010] Writer SDK plug-in initialization complete.
+MAPPING> SDKS_38509 [2024-04-12 09:09:41.450] SDK target and group initialization complete.
+MAPPING> TM_6307 [2024-04-12 09:09:41.450] DTM error log disabled. 
+MAPPING> TE_7022 [2024-04-12 09:09:41.450] TShmWriter: Initialized
+MAPPING> TM_6007 [2024-04-12 09:09:41.944] DTM initialized successfully for session [s_mtt_001Y8X0Z000000000HVJ]
+DIRECTOR> PETL_24033 [2024-04-12 09:09:41.944] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2024-04-12 09:09:41.944] Starting pre-session tasks. : (Fri Apr 12 09:09:41 2024)
+PRE-SESS> PETL_24091 [2024-04-12 09:09:41.944] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2024-04-12 09:09:41.945] Pre-session task completed successfully. : (Fri Apr 12 09:09:41 2024)
+DIRECTOR> PETL_24006 [2024-04-12 09:09:41.945] Starting data movement.
+MAPPING> TM_6660 [2024-04-12 09:09:41.946] Total Buffer Pool size is 13980640 bytes and Block size is 774480 bytes.
+MAPPING> CONNECTOR_10000 [2024-04-12 09:09:44.004] [INFO] The source or cached lookup object at runtime is overridden with the parameter name = CUSTOM_TABLE table name = CUSTOM_TABLE.
+READER_1_1_1> PETL_24091 [2024-04-12 09:09:44.294] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> CONNECTOR_10000 [2024-04-12 09:09:44.379] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Read data
+READER_1_1_1> POSTGRES_10000 [2024-04-12 09:09:44.799] [INFO] Connection is successful with JDBC connection string jdbc:informatica:postgresql://sanofi-emea-rds-01-vax-uat-feeder.p041714224494.aws-emea.sanofi.com:5432;CATALOGOPTIONS=2;CONNECTIONRETRYDELAY=1;BULKLOADBATCHSIZE=1000;DATABASENAME=vaxforce;CRYPTOPROTOCOLVERSION=TLSv1.2;MAXPOOLEDSTATEMENTS=0;USESYSTEMPROXYOPTIONS=false;KEYSTORE=;PROGRAMID=;TRUSTSTOREPASSWORD=***;VALIDATESERVERCERTIFICATE=false;MAXVARCHARSIZE=10485760;KEYSTOREPASSWORD=***;CONNECTIONRETRYCOUNT=5;BATCHPERFORMANCEWORKAROUND=false;INITIALIZATIONSTRING=;FAILOVERPRECONNECT=false;SOCKETDEFAULTSENDBUFFERSIZE=0;SECURERANDOMALGORITHM=;REGISTERSTATEMENTPOOLMONITORMBEAN=false;RESULTSETMETADATAOPTIONS=0;CLIENTUSER=;SUPPORTSCATALOGS=true;QUERYTIMEOUT=0;FAILOVERGRANULARITY=nonAtomic;HOSTNAMEINCERTIFICATE=;APPLICATIONNAME=Informatica;JAVADOUBLETOSTRING=false;LOADLIBRARYPATH=;IMPORTSTATEMENTPOOL=;ALTERNATESERVERS=;BATCHMECHANISM=;MAXLONGVARCHARSIZE=1073741823;MAXNUMERICSCALE=998;KEYPASSWORD=***;EXTENDEDCOLUMNMETADATA=false;RANDOMGENERATOR=SECURERANDOM;ENCRYPTIONMETHOD=SSL;ACCOUNTINGINFO=;CONVERTNULL=1;TRUSTSTORE=;JDBCBEHAVIOR=1;FAILOVERMODE=connect;AUTHENTICATIONMETHOD=userIdPassword;LOGINTIMEOUT=0;SOCKETDEFAULTRECEIVEBUFFERSIZE=0;LOADBALANCING=false;ISTLSTUNNEL=false;TRANSACTIONERRORBEHAVIOR=RollbackTransaction;WORKAROUNDS=0;INSENSITIVERESULTSETBUFFERSIZE=2048;CLIENTHOSTNAME=;ENABLEPREPARETHRESHOLD=false;KEEPALIVES=1;VARCHARCLOBTHRESHOLD=32768;MAXNUMERICPRECISION=1000;PREPARETHRESHOLD=1;CALLESCAPEBEHAVIOR=CallIfNoReturn
+READER_1_1_1> POSTGRES_10000 [2024-04-12 09:09:44.800] [INFO] Fetch size to read source data is: 100,000.
+TRANSF_1_1_1> PETL_24091 [2024-04-12 09:09:44.802] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2024-04-12 09:09:44.803] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> SalesforceConnection_10058 [2024-04-12 09:09:44.877] [INFO] Proxy Host : [emea-temp-informatica.p444577932277.aws-emea.sanofi.com] Proxy Port : [3128]
+WRITER_1_*_1> SalesforceConnection_10048 [2024-04-12 09:09:47.168] [INFO] Account[integration.user@sanofi.japan.full] logged on salesforce.com at [https://test.salesforce.com/services/Soap/u/49.0].
+WRITER_1_*_1> SalesforceConnection_10147 [2024-04-12 09:09:47.168] [INFO] Logged on salesforce.com in [Standard] mode.
+WRITER_1_*_1> SFDC_WRITER_10065 [2024-04-12 09:09:47.177] [INFO] Inserted Target Batch Size [200].
+WRITER_1_*_1> GENERIC_WRITER_10036 [2024-04-12 09:09:47.181] [WARNING] Success file directory is empty or starts with a $. Defaulting it to $PMTargetFileDir.
+WRITER_1_*_1> GENERIC_WRITER_10037 [2024-04-12 09:09:47.181] [WARNING] Error file directory is empty or starts with a $. Defaulting it to $PMBadFileDir.
+WRITER_1_*_1> WRT_8270 [2024-04-12 09:09:47.182] Target connection group #1 consists of target(s) [EM_Event_vod__c: Partition 1]
+WRITER_1_*_1> WRT_8003 [2024-04-12 09:09:47.182] Writer initialization complete.
+WRITER_1_*_1> WRT_8005 [2024-04-12 09:09:47.183] Writer run started.
+WRITER_1_*_1> WRT_8158 [2024-04-12 09:09:47.183] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Fri Apr 12 09:09:46 2024
+
+Target tables:
+
+     EM_Event_vod__c: Partition 1
+
+
+READER_1_1_1> POSTGRES_10000 [2024-04-12 09:09:47.214] [INFO] SQL query to read source data is: select dal.sa_external_id_cross_border__c, dal.status_vod__c, dal.sa_event_id__c, dal.org, dal.local_sfaid from xbord.dal_in_xbord_em_event_onecrm dal where dal.org='JAPAN'.
+TRANSF_1_1_1> DBG_21216 [2024-04-12 09:09:47.216] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2024-04-12 09:09:47.216] Start loading table [EM_Event_vod__c: Partition 1] at: Fri Apr 12 09:09:46 2024
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.949] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.949] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=1 Targ Rowid=1
+  Id (Id:UniChar.18:): "a3a5D00000025MOQAY"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=2 Targ Rowid=2
+  Id (Id:UniChar.18:): "a3a5D00000026cWQAQ"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [CurrencyIsoCode].  Status code [FIELD_CUSTOM_VALIDATION_EXCEPTION].  Message [Currency code of Event should be same of the currency code of Cost Element].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=4 Targ Rowid=4
+  Id (Id:UniChar.18:): "a3a1e00000VoPXTAA3"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=7 Targ Rowid=7
+  Id (Id:UniChar.18:): "a3a5D000000Ak62QAC"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=8 Targ Rowid=8
+  Id (Id:UniChar.18:): "a3a5D000000AjZIQA0"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=9 Targ Rowid=9
+  Id (Id:UniChar.18:): "a3a5D000000AjZDQA0"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=10 Targ Rowid=10
+  Id (Id:UniChar.18:): "a3a5D000000AjZSQA0"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=11 Targ Rowid=11
+  Id (Id:UniChar.18:): "a3a5D000000AjYyQAK"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=12 Targ Rowid=12
+  Id (Id:UniChar.18:): "a3a5D000000AjZcQAK"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=13 Targ Rowid=13
+  Id (Id:UniChar.18:): "a3a5D000000AjZXQA0"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=14 Targ Rowid=14
+  Id (Id:UniChar.18:): "a3a5D000000AjZNQA0"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=15 Targ Rowid=15
+  Id (Id:UniChar.18:): "a3a5D000000AjZhQAK"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=16 Targ Rowid=16
+  Id (Id:UniChar.18:): "a3a5D000000AjZ3QAK"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=17 Targ Rowid=17
+  Id (Id:UniChar.18:): "a3a5D000000AjYPQA0"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 09:09:57.950] Timestamp Event: [Fri Apr 12 09:09:57 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 09:09:57.950] Error loading into target [EM_Event_vod__c] : Error received from salesforce.com.  Fields [].  Status code [INVALID_CROSS_REFERENCE_KEY].  Message [invalid cross reference id].
+WRITER_1_*_1> CMN_1053 [2024-04-12 09:09:57.950] : Rowdata: ( RowType=1(update) Src Rowid=18 Targ Rowid=18
+  Id (Id:UniChar.18:): "a3a5D00000024y7QAA"
+  SA_Sync_Status__c (SA_Sync_Status__c:UniChar.255:): "Synched"
+)
+
+WRITER_1_*_1> WRT_8168 [2024-04-12 09:09:57.950] End loading table [EM_Event_vod__c: Partition 1] at: Fri Apr 12 09:09:57 2024
+WRITER_1_*_1> WRT_8035 [2024-04-12 09:09:57.952] Load complete time: Fri Apr 12 09:09:57 2024
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: EM_Event_vod__c: Partition 1 (Instance Name: [EM_Event_vod__c])
+WRT_8041 Updated rows  - Requested: 18         Applied: 3          Rejected: 15         Affected: 3         
+
+
+WRITER_1_*_1> WRT_8043 [2024-04-12 09:09:57.952] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2024-04-12 09:09:57.952] Writer run completed.
+MANAGER> PETL_24031 [2024-04-12 09:09:57.957] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [EM_Event_vod__c] has completed.
+	Total Run Time = [10.736029] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MANAGER> PETL_24005 [2024-04-12 09:09:57.958] Starting post-session tasks. : (Fri Apr 12 09:09:57 2024)
+POST-SESS> PETL_24091 [2024-04-12 09:09:57.958] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2024-04-12 09:09:57.958] Post-session task completed successfully. : (Fri Apr 12 09:09:57 2024)
+MAPPING> SDKS_38510 [2024-04-12 09:09:57.959] SDK target and group deinitialized with status [0].
+MAPPING> SDKS_38025 [2024-04-12 09:09:57.959] Plug-in 500100 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38019 [2024-04-12 09:09:57.959] Writer SDK plug-ins deinitialized with status [0].
+MAPPING> SDKS_38025 [2024-04-12 09:09:57.959] Plug-in 601301 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38018 [2024-04-12 09:09:57.959] Reader SDK plug-ins deinitialized with status [0].
+MAPPING> TM_6018 [2024-04-12 09:09:57.959] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2024-04-12 09:09:58.833] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2024-04-12 09:09:58.833] Session run completed successfully.
+DIRECTOR> TM_6022 [2024-04-12 09:09:58.833] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2024-04-12 09:09:58.833] Source Load Summary.
+DIRECTOR> CMN_1740 [2024-04-12 09:09:58.833] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [18], Affected Rows [18], Applied Rows [18], Rejected Rows [0]
+DIRECTOR> TM_6253 [2024-04-12 09:09:58.833] Target Load Summary.
+DIRECTOR> CMN_1740 [2024-04-12 09:09:58.833] Table: [EM_Event_vod__c] (Instance Name: [EM_Event_vod__c] Instance UI Name: [Target])
+	 Output Rows [3], Affected Rows [3], Applied Rows [3], Rejected Rows [15]
+DIRECTOR> TM_6023 [2024-04-12 09:09:58.833] 
+===================================================
+
+DIRECTOR> TM_6020 [2024-04-12 09:09:58.833] Session [s_mtt_001Y8X0Z000000000HVJ] completed at [Fri Apr 12 09:09:58 2024].

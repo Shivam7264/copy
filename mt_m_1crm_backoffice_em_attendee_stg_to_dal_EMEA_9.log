@@ -1,0 +1,376 @@
+Agent Group Id: 001Y8Y2500000000000K
+Agent Group Name: emea-sa-aws-cloud-ag-001
+Agent Name: xsnl70x317t.pharma.aventis.com
+Agent Id: 001Y8Y0800000000000G
+Task Name: mt_m_1crm_backoffice_em_attendee_stg_to_dal_EMEA
+Task Type: MTT
+Task Id: 001Y8Y0Z000000002J1J
+Run Id: 9
+Service Id: 2412039
+Started By: latika.hassija-ext@sanofi.com.saml3
+Run Context Type: ICS_UI
+07/04/2024 16:03:28 **** Importing Connection: Conn_001Y8Y0B0000000000WU ...
+07/04/2024 16:03:28 **** Importing Source Definition: DUMMY_src_stg_attendee ...
+07/04/2024 16:03:28 **** Importing Target Definition: err_backoffice_attendee ...
+07/04/2024 16:03:28 **** Importing Target Definition: dal_backoffice_attendee ...
+07/04/2024 16:03:28 **** Importing Target Definition: dal_backoffice_attendee_final_load ...
+07/04/2024 16:03:28 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  DUMMY_src_stg_attendee...
+    Validating Target Definition  dal_backoffice_attendee_final_load...
+    Validating Target Definition  dal_backoffice_attendee...
+    Validating Target Definition  err_backoffice_attendee...
+07/04/2024 16:03:28 **** Importing Mapping: Mapping0 ...
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+    <Warning> :  Invalid table attribute: Exec SQL
+07/04/2024 16:03:28 **** Importing Workflow: wf_mtt_001Y8Y0Z000000002J1J ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_001Y8Y0Z000000002J1J > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+[Summary for Application Source Qualifier src_stg_attendee]
+     Is a new repartition point.
+     Partition type changed from None to Pass Through.
+Successfully extracted session instance [s_mtt_001Y8Y0Z000000002J1J].  Starting repository sequence id is [-1677667618]
+======================================================================
+PETL_24036 [2024-07-04 16:03:28.440] Beginning the prepare phase for the session.
+TM_6721 [2024-07-04 16:03:28.440] Started [Connect to Repository].
+TM_6722 [2024-07-04 16:03:28.824] Finished [Connect to Repository].  It took [0.383457] seconds.
+TM_6721 [2024-07-04 16:03:28.824] Started [Fetch Session from Repository].
+TM_6722 [2024-07-04 16:03:28.943] Finished [Fetch Session from Repository].  It took [0.119302] seconds.
+VAR_27085 [2024-07-04 16:03:28.944] Parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8Y0Z000000002J1J.param] is opened for [session [wf_mtt_001Y8Y0Z000000002J1J.s_mtt_001Y8Y0Z000000002J1J]].
+VAR_27062 [2024-07-04 16:03:28.944] Warning! Cannot find section for worklet [wf_mtt_001Y8Y0Z000000002J1J] and folder [] in parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8Y0Z000000002J1J.param].
+TM_6721 [2024-07-04 16:03:28.961] Started [Partition Group Formation].
+TM_6722 [2024-07-04 16:03:28.962] Finished [Partition Group Formation].  It took [0.000396013] seconds.
+PETL_24037 [2024-07-04 16:03:28.962] Finished the prepare phase for the session.
+DIRECTOR> TM_6228 [2024-07-04 16:03:28.962] Writing session output to log file [/infashared/platform/sessionlogs/s_mtt_6SaMHlnAOGZes9NW4UtWsY_9.log].
+DIRECTOR> VAR_27085 [2024-07-04 16:03:28.977] Parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8Y0Z000000002J1J.param] is opened for [session [wf_mtt_001Y8Y0Z000000002J1J.s_mtt_001Y8Y0Z000000002J1J]].
+DIRECTOR> VAR_27062 [2024-07-04 16:03:28.978] Warning! Cannot find section for worklet [wf_mtt_001Y8Y0Z000000002J1J] and folder [] in parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8Y0Z000000002J1J.param].
+DIRECTOR> PETL_24093 [2024-07-04 16:03:28.980] User defined Parameter File Location [/infashared/projects/1CRM/TEMP/backoffice_parameters.params].
+DIRECTOR> TM_6014 [2024-07-04 16:03:28.980] Initializing session [s_mtt_001Y8Y0Z000000002J1J] at [Thu Jul 04 16:03:28 2024].
+DIRECTOR> TM_6683 [2024-07-04 16:03:28.980] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2024-07-04 16:03:28.980] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2024-07-04 16:03:28.980] Folder: []
+DIRECTOR> TM_6685 [2024-07-04 16:03:28.980] Workflow: [wf_mtt_001Y8Y0Z000000002J1J] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2024-07-04 16:03:28.980] Operating System Type [Linux]
+DIRECTOR> TM_6101 [2024-07-04 16:03:28.980] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2024-07-04 16:03:28.980] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2024-07-04 16:03:28.980] Session [s_mtt_001Y8Y0Z000000002J1J] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2024-07-04 16:03:29.013] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2024-07-04 16:03:29.013] Running Partition Group [1].
+MANAGER> PETL_24000 [2024-07-04 16:03:29.013] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2024-07-04 16:03:29.014] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2024-07-04 16:03:29.014] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2024-07-04 16:03:29.014] Initializing session run.
+MAPPING> PETL_24091 [2024-07-04 16:03:29.014] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2024-07-04 16:03:29.015] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2024-07-04 16:03:29.015] Server Code page: [UTF-8 encoding of Unicode]
+MAPPING> TM_6151 [2024-07-04 16:03:29.016] The session sort order is [Binary].
+MAPPING> TM_6185 [2024-07-04 16:03:29.016] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2024-07-04 16:03:29.016] Current Timezone:[UTC +1:0]
+MAPPING> CMN_65111 [2024-07-04 16:03:29.016] Current Process ID:[21093]
+MAPPING> TM_6155 [2024-07-04 16:03:29.016] Using HIGH precision processing.
+MAPPING> TM_6180 [2024-07-04 16:03:29.016] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2024-07-04 16:03:29.016] Session target-based commit interval is [10000].
+MAPPING> PMJVM_42020 [2024-07-04 16:03:29.019] [INFO] Loaded library : /software/ICSA/apps/jdk/zulu8.70.0.52-sa-fx-jdk8.0.372/jre/lib/amd64/server/libjvm.so.
+MAPPING> PMJVM_42009 [2024-07-04 16:03:29.087] [INFO] Created Java VM successfully.
+MAPPING> SDKS_38029 [2024-07-04 16:03:29.143] Loaded plug-in 601301: [plugin description].
+MAPPING> SDKS_38024 [2024-07-04 16:03:29.170] Plug-in 601301 initialization complete.
+MAPPING> SDKS_38016 [2024-07-04 16:03:29.170] Reader SDK plug-in initialization complete.
+MAPPING> SDKS_38029 [2024-07-04 16:03:29.172] Loaded plug-in 601301: [plugin description].
+MAPPING> SDKS_38024 [2024-07-04 16:03:29.512] Plug-in 601301 initialization complete.
+MAPPING> SDKS_38017 [2024-07-04 16:03:29.512] Writer SDK plug-in initialization complete.
+MAPPING> CONNECTOR_10000 [2024-07-04 16:03:30.750] [INFO] The target object at runtime is overridden with the parameter name = err_backoffice_attendee table name = err_backoffice_attendee.
+MAPPING> POSTGRES_10000 [2024-07-04 16:03:31.396] [INFO] The Secure Agent ran the following SQL query to truncate the target table: [TRUNCATE "emea"."err_backoffice_attendee"]
+MAPPING> CONNECTOR_10000 [2024-07-04 16:03:31.453] [INFO] The target object at runtime is overridden with the parameter name = dal_backoffice_attendee table name = dal_backoffice_attendee.
+MAPPING> CONNECTOR_10000 [2024-07-04 16:03:31.496] [INFO] The target object at runtime is overridden with the parameter name = dal_backoffice_attendee_final_load table name = dal_backoffice_attendee_final_load.
+MAPPING> POSTGRES_10000 [2024-07-04 16:03:31.509] [INFO] Pre-SQL query for the target is: delete from  emea.dal_backoffice_attendee_final_load.
+MAPPING> SDKS_38509 [2024-07-04 16:03:31.617] SDK target and group initialization complete.
+MAPPING> TM_6307 [2024-07-04 16:03:31.617] DTM error log disabled. 
+MAPPING> TE_7022 [2024-07-04 16:03:31.617] TShmWriter: Initialized
+MAPPING> TM_6007 [2024-07-04 16:03:31.626] DTM initialized successfully for session [s_mtt_001Y8Y0Z000000002J1J]
+DIRECTOR> PETL_24033 [2024-07-04 16:03:31.626] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2024-07-04 16:03:31.626] Starting pre-session tasks. : (Thu Jul 04 16:03:31 2024)
+PRE-SESS> PETL_24091 [2024-07-04 16:03:31.626] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2024-07-04 16:03:31.627] Pre-session task completed successfully. : (Thu Jul 04 16:03:31 2024)
+DIRECTOR> PETL_24006 [2024-07-04 16:03:31.627] Starting data movement.
+MAPPING> TM_6966 [2024-07-04 16:03:31.628] Reducing estimate of the amount of buffer pool memory required for high performance.
+MAPPING> TM_6660 [2024-07-04 16:03:31.628] Total Buffer Pool size is 167852160 bytes and Block size is 8388608 bytes.
+MAPPING> CONNECTOR_10000 [2024-07-04 16:03:31.678] [INFO] The source or cached lookup object at runtime is overridden with the parameter name = CUSTOM_TABLE table name = CUSTOM_TABLE.
+READER_1_1_1> PETL_24091 [2024-07-04 16:03:31.700] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> CONNECTOR_10000 [2024-07-04 16:03:31.759] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Read data
+READER_1_1_1> POSTGRES_10000 [2024-07-04 16:03:31.840] [INFO] Connection is successful with JDBC connection string jdbc:informatica:postgresql://sanofi-emea-rds-01-vax-dev-feeder.p274017262122.aws-emea.sanofi.com:5432;CATALOGOPTIONS=2;CONNECTIONRETRYDELAY=1;BULKLOADBATCHSIZE=1000;DATABASENAME=vaxforce;CRYPTOPROTOCOLVERSION=;MAXPOOLEDSTATEMENTS=0;USESYSTEMPROXYOPTIONS=false;KEYSTORE=;PROGRAMID=;TCPKEEPALIVE=true;TRUSTSTOREPASSWORD=***;VALIDATESERVERCERTIFICATE=false;MAXVARCHARSIZE=10485760;KEYSTOREPASSWORD=***;CONNECTIONRETRYCOUNT=5;BATCHPERFORMANCEWORKAROUND=false;KEEPALIVES_IDLE=10;KEEPALIVES_COUNT=100;INITIALIZATIONSTRING=;FAILOVERPRECONNECT=false;SOCKETDEFAULTSENDBUFFERSIZE=0;SECURERANDOMALGORITHM=;REGISTERSTATEMENTPOOLMONITORMBEAN=false;RESULTSETMETADATAOPTIONS=0;CLIENTUSER=;SUPPORTSCATALOGS=true;QUERYTIMEOUT=0;HOSTNAMEINCERTIFICATE=;FAILOVERGRANULARITY=nonAtomic;KEEPALIVES_INTERVAL=10;APPLICATIONNAME=Informatica;JAVADOUBLETOSTRING=false;LOADLIBRARYPATH=;IMPORTSTATEMENTPOOL=;ALTERNATESERVERS=;BATCHMECHANISM=;MAXLONGVARCHARSIZE=1073741823;MAXNUMERICSCALE=998;KEYPASSWORD=***;EXTENDEDCOLUMNMETADATA=false;RANDOMGENERATOR=SECURERANDOM;ENCRYPTIONMETHOD=SSL;ACCOUNTINGINFO=;CONVERTNULL=1;TRUSTSTORE=;JDBCBEHAVIOR=1;FAILOVERMODE=connect;AUTHENTICATIONMETHOD=userIdPassword;LOGINTIMEOUT=0;SOCKETDEFAULTRECEIVEBUFFERSIZE=0;LOADBALANCING=false;ISTLSTUNNEL=false;TRANSACTIONERRORBEHAVIOR=RollbackTransaction;WORKAROUNDS=0;INSENSITIVERESULTSETBUFFERSIZE=2048;CLIENTHOSTNAME=;ENABLEPREPARETHRESHOLD=false;KEEPALIVES=1;VARCHARCLOBTHRESHOLD=32768;MAXNUMERICPRECISION=1000;PREPARETHRESHOLD=1;CALLESCAPEBEHAVIOR=CallIfNoReturn
+READER_1_1_1> POSTGRES_10000 [2024-07-04 16:03:31.840] [INFO] Fetch size to read source data is: 100,000.
+TRANSF_1_1_1> PETL_24091 [2024-07-04 16:03:31.842] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2024-07-04 16:03:31.842] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> CONNECTOR_10000 [2024-07-04 16:03:31.849] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Write data
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:31.958] [INFO] Connection is successful with JDBC connection string jdbc:informatica:postgresql://sanofi-emea-rds-01-vax-dev-feeder.p274017262122.aws-emea.sanofi.com:5432;CATALOGOPTIONS=2;CONNECTIONRETRYDELAY=1;BULKLOADBATCHSIZE=1000;DATABASENAME=vaxforce;CRYPTOPROTOCOLVERSION=;MAXPOOLEDSTATEMENTS=0;USESYSTEMPROXYOPTIONS=false;KEYSTORE=;PROGRAMID=;TCPKEEPALIVE=true;TRUSTSTOREPASSWORD=***;VALIDATESERVERCERTIFICATE=false;MAXVARCHARSIZE=10485760;KEYSTOREPASSWORD=***;CONNECTIONRETRYCOUNT=5;BATCHPERFORMANCEWORKAROUND=false;KEEPALIVES_IDLE=10;KEEPALIVES_COUNT=100;INITIALIZATIONSTRING=;FAILOVERPRECONNECT=false;SOCKETDEFAULTSENDBUFFERSIZE=0;SECURERANDOMALGORITHM=;REGISTERSTATEMENTPOOLMONITORMBEAN=false;RESULTSETMETADATAOPTIONS=0;CLIENTUSER=;SUPPORTSCATALOGS=true;QUERYTIMEOUT=0;HOSTNAMEINCERTIFICATE=;FAILOVERGRANULARITY=nonAtomic;KEEPALIVES_INTERVAL=10;APPLICATIONNAME=Informatica;JAVADOUBLETOSTRING=false;LOADLIBRARYPATH=;IMPORTSTATEMENTPOOL=;ALTERNATESERVERS=;BATCHMECHANISM=;MAXLONGVARCHARSIZE=1073741823;MAXNUMERICSCALE=998;KEYPASSWORD=***;EXTENDEDCOLUMNMETADATA=false;RANDOMGENERATOR=SECURERANDOM;ENCRYPTIONMETHOD=SSL;ACCOUNTINGINFO=;CONVERTNULL=1;TRUSTSTORE=;JDBCBEHAVIOR=1;FAILOVERMODE=connect;AUTHENTICATIONMETHOD=userIdPassword;LOGINTIMEOUT=0;SOCKETDEFAULTRECEIVEBUFFERSIZE=0;LOADBALANCING=false;ISTLSTUNNEL=false;TRANSACTIONERRORBEHAVIOR=RollbackTransaction;WORKAROUNDS=0;INSENSITIVERESULTSETBUFFERSIZE=2048;CLIENTHOSTNAME=;ENABLEPREPARETHRESHOLD=false;KEEPALIVES=1;VARCHARCLOBTHRESHOLD=32768;MAXNUMERICPRECISION=1000;PREPARETHRESHOLD=1;CALLESCAPEBEHAVIOR=CallIfNoReturn
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:31.959] [INFO] The Secure Agent uses the following batch size to write data: [0]
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:31.972] [INFO] SQL query for the insert operation is: INSERT INTO "emea"."dal_backoffice_attendee_final_load"("attendee_id", "meal_opt_in_vod__c", "status_vod__c", "user_id", "event_id", "sa_country_code__c", "action", "firstname", "lastname", "event_vod__c", "user_sfa_id", "currency_code", "attendee_name_vod__c", "attendee_type_vod__c", "flag", "created_ts", "external_id_vod__c") VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?).
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:31.972] [INFO] SQL query for the update operation is: INSERT INTO "emea"."dal_backoffice_attendee_final_load"("attendee_id", "meal_opt_in_vod__c", "status_vod__c", "user_id", "event_id", "sa_country_code__c", "action", "firstname", "lastname", "event_vod__c", "user_sfa_id", "currency_code", "attendee_name_vod__c", "attendee_type_vod__c", "flag", "created_ts", "external_id_vod__c") VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT ("attendee_id") DO UPDATE SET "meal_opt_in_vod__c"=?,"status_vod__c"=?,"user_id"=?,"event_id"=?,"sa_country_code__c"=?,"action"=?,"firstname"=?,"lastname"=?,"event_vod__c"=?,"user_sfa_id"=?,"currency_code"=?,"attendee_name_vod__c"=?,"attendee_type_vod__c"=?,"flag"=?,"created_ts"=?,"external_id_vod__c"=?.
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:31.972] [INFO] SQL query for the delete operation is: DELETE FROM "emea"."dal_backoffice_attendee_final_load" WHERE "attendee_id"=?.
+WRITER_1_*_1> CONNECTOR_10000 [2024-07-04 16:03:31.975] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Write data
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.068] [INFO] Connection is successful with JDBC connection string jdbc:informatica:postgresql://sanofi-emea-rds-01-vax-dev-feeder.p274017262122.aws-emea.sanofi.com:5432;CATALOGOPTIONS=2;CONNECTIONRETRYDELAY=1;BULKLOADBATCHSIZE=1000;DATABASENAME=vaxforce;CRYPTOPROTOCOLVERSION=;MAXPOOLEDSTATEMENTS=0;USESYSTEMPROXYOPTIONS=false;KEYSTORE=;PROGRAMID=;TCPKEEPALIVE=true;TRUSTSTOREPASSWORD=***;VALIDATESERVERCERTIFICATE=false;MAXVARCHARSIZE=10485760;KEYSTOREPASSWORD=***;CONNECTIONRETRYCOUNT=5;BATCHPERFORMANCEWORKAROUND=false;KEEPALIVES_IDLE=10;KEEPALIVES_COUNT=100;INITIALIZATIONSTRING=;FAILOVERPRECONNECT=false;SOCKETDEFAULTSENDBUFFERSIZE=0;SECURERANDOMALGORITHM=;REGISTERSTATEMENTPOOLMONITORMBEAN=false;RESULTSETMETADATAOPTIONS=0;CLIENTUSER=;SUPPORTSCATALOGS=true;QUERYTIMEOUT=0;HOSTNAMEINCERTIFICATE=;FAILOVERGRANULARITY=nonAtomic;KEEPALIVES_INTERVAL=10;APPLICATIONNAME=Informatica;JAVADOUBLETOSTRING=false;LOADLIBRARYPATH=;IMPORTSTATEMENTPOOL=;ALTERNATESERVERS=;BATCHMECHANISM=;MAXLONGVARCHARSIZE=1073741823;MAXNUMERICSCALE=998;KEYPASSWORD=***;EXTENDEDCOLUMNMETADATA=false;RANDOMGENERATOR=SECURERANDOM;ENCRYPTIONMETHOD=SSL;ACCOUNTINGINFO=;CONVERTNULL=1;TRUSTSTORE=;JDBCBEHAVIOR=1;FAILOVERMODE=connect;AUTHENTICATIONMETHOD=userIdPassword;LOGINTIMEOUT=0;SOCKETDEFAULTRECEIVEBUFFERSIZE=0;LOADBALANCING=false;ISTLSTUNNEL=false;TRANSACTIONERRORBEHAVIOR=RollbackTransaction;WORKAROUNDS=0;INSENSITIVERESULTSETBUFFERSIZE=2048;CLIENTHOSTNAME=;ENABLEPREPARETHRESHOLD=false;KEEPALIVES=1;VARCHARCLOBTHRESHOLD=32768;MAXNUMERICPRECISION=1000;PREPARETHRESHOLD=1;CALLESCAPEBEHAVIOR=CallIfNoReturn
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.069] [INFO] The Secure Agent uses the following batch size to write data: [0]
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.080] [INFO] SQL query for the insert operation is: INSERT INTO "emea"."err_backoffice_attendee"("attendee_id", "meal_opt_in_vod__c", "status_vod__c", "user_id", "event_id", "sa_country_code__c", "action", "firstname", "lastname", "event_vod__c", "user_sfa_id", "currency_code", "attendee_name_vod__c", "attendee_type_vod__c", "external_id_vod__c", "created_date", "job_id", "error_message") VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?).
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.080] [INFO] SQL query for the update operation is: INSERT INTO "emea"."err_backoffice_attendee"("attendee_id", "meal_opt_in_vod__c", "status_vod__c", "user_id", "event_id", "sa_country_code__c", "action", "firstname", "lastname", "event_vod__c", "user_sfa_id", "currency_code", "attendee_name_vod__c", "attendee_type_vod__c", "external_id_vod__c", "created_date", "job_id", "error_message") VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT ("attendee_id") DO UPDATE SET "meal_opt_in_vod__c"=?,"status_vod__c"=?,"user_id"=?,"event_id"=?,"sa_country_code__c"=?,"action"=?,"firstname"=?,"lastname"=?,"event_vod__c"=?,"user_sfa_id"=?,"currency_code"=?,"attendee_name_vod__c"=?,"attendee_type_vod__c"=?,"external_id_vod__c"=?,"created_date"=?,"job_id"=?,"error_message"=?.
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.080] [INFO] SQL query for the delete operation is: DELETE FROM "emea"."err_backoffice_attendee" WHERE "attendee_id"=?.
+WRITER_1_*_1> CONNECTOR_10000 [2024-07-04 16:03:32.082] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Write data
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.172] [INFO] Connection is successful with JDBC connection string jdbc:informatica:postgresql://sanofi-emea-rds-01-vax-dev-feeder.p274017262122.aws-emea.sanofi.com:5432;CATALOGOPTIONS=2;CONNECTIONRETRYDELAY=1;BULKLOADBATCHSIZE=1000;DATABASENAME=vaxforce;CRYPTOPROTOCOLVERSION=;MAXPOOLEDSTATEMENTS=0;USESYSTEMPROXYOPTIONS=false;KEYSTORE=;PROGRAMID=;TCPKEEPALIVE=true;TRUSTSTOREPASSWORD=***;VALIDATESERVERCERTIFICATE=false;MAXVARCHARSIZE=10485760;KEYSTOREPASSWORD=***;CONNECTIONRETRYCOUNT=5;BATCHPERFORMANCEWORKAROUND=false;KEEPALIVES_IDLE=10;KEEPALIVES_COUNT=100;INITIALIZATIONSTRING=;FAILOVERPRECONNECT=false;SOCKETDEFAULTSENDBUFFERSIZE=0;SECURERANDOMALGORITHM=;REGISTERSTATEMENTPOOLMONITORMBEAN=false;RESULTSETMETADATAOPTIONS=0;CLIENTUSER=;SUPPORTSCATALOGS=true;QUERYTIMEOUT=0;HOSTNAMEINCERTIFICATE=;FAILOVERGRANULARITY=nonAtomic;KEEPALIVES_INTERVAL=10;APPLICATIONNAME=Informatica;JAVADOUBLETOSTRING=false;LOADLIBRARYPATH=;IMPORTSTATEMENTPOOL=;ALTERNATESERVERS=;BATCHMECHANISM=;MAXLONGVARCHARSIZE=1073741823;MAXNUMERICSCALE=998;KEYPASSWORD=***;EXTENDEDCOLUMNMETADATA=false;RANDOMGENERATOR=SECURERANDOM;ENCRYPTIONMETHOD=SSL;ACCOUNTINGINFO=;CONVERTNULL=1;TRUSTSTORE=;JDBCBEHAVIOR=1;FAILOVERMODE=connect;AUTHENTICATIONMETHOD=userIdPassword;LOGINTIMEOUT=0;SOCKETDEFAULTRECEIVEBUFFERSIZE=0;LOADBALANCING=false;ISTLSTUNNEL=false;TRANSACTIONERRORBEHAVIOR=RollbackTransaction;WORKAROUNDS=0;INSENSITIVERESULTSETBUFFERSIZE=2048;CLIENTHOSTNAME=;ENABLEPREPARETHRESHOLD=false;KEEPALIVES=1;VARCHARCLOBTHRESHOLD=32768;MAXNUMERICPRECISION=1000;PREPARETHRESHOLD=1;CALLESCAPEBEHAVIOR=CallIfNoReturn
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.172] [INFO] The Secure Agent uses the following batch size to write data: [0]
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.182] [INFO] SQL query for the insert operation is: INSERT INTO "emea"."dal_backoffice_attendee"("attendee_id", "meal_opt_in_vod__c", "status_vod__c", "user_id", "event_id", "sa_country_code__c", "action", "firstname", "lastname", "event_vod__c", "user_sfa_id", "currency_code", "attendee_name_vod__c", "attendee_type_vod__c", "flag", "status", "created_ts", "external_id_vod__c") VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?).
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.182] [INFO] SQL query for the update operation is: INSERT INTO "emea"."dal_backoffice_attendee"("attendee_id", "meal_opt_in_vod__c", "status_vod__c", "user_id", "event_id", "sa_country_code__c", "action", "firstname", "lastname", "event_vod__c", "user_sfa_id", "currency_code", "attendee_name_vod__c", "attendee_type_vod__c", "flag", "status", "created_ts", "external_id_vod__c") VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT ("external_id_vod__c") DO UPDATE SET "attendee_id"=?,"meal_opt_in_vod__c"=?,"status_vod__c"=?,"user_id"=?,"event_id"=?,"sa_country_code__c"=?,"action"=?,"firstname"=?,"lastname"=?,"event_vod__c"=?,"user_sfa_id"=?,"currency_code"=?,"attendee_name_vod__c"=?,"attendee_type_vod__c"=?,"flag"=?,"status"=?,"created_ts"=?.
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.182] [INFO] SQL query for the delete operation is: DELETE FROM "emea"."dal_backoffice_attendee" WHERE "external_id_vod__c"=?.
+WRITER_1_*_1> WRT_8270 [2024-07-04 16:03:32.183] Target connection group #1 consists of target(s) [dal_backoffice_attendee_final_load: Partition 1]
+WRITER_1_*_1> WRT_8270 [2024-07-04 16:03:32.183] Target connection group #2 consists of target(s) [err_backoffice_attendee: Partition 1]
+WRITER_1_*_1> WRT_8270 [2024-07-04 16:03:32.183] Target connection group #3 consists of target(s) [dal_backoffice_attendee: Partition 1]
+WRITER_1_*_1> WRT_8003 [2024-07-04 16:03:32.183] Writer initialization complete.
+WRITER_1_*_1> WRT_8005 [2024-07-04 16:03:32.183] Writer run started.
+WRITER_1_*_1> WRT_8158 [2024-07-04 16:03:32.183] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Thu Jul 04 16:03:32 2024
+
+Target tables:
+
+     dal_backoffice_attendee_final_load: Partition 1
+     err_backoffice_attendee: Partition 1
+     dal_backoffice_attendee: Partition 1
+
+
+READER_1_1_1> POSTGRES_10000 [2024-07-04 16:03:32.399] [INFO] SQL query to read source data is: select
+stg.attendee_id,
+stg.meal_opt_in_vod__c,
+stg.status_vod__c,
+stg.user_id,
+stg.event_id,
+stg.sa_country_code__c,
+stg.action,
+acc.firstname,
+acc.lastname,
+evt.sfa_id as event_vod__c,
+usr.sfa_id as user_vod__c,
+cntry.currency_code,
+att.id as stg_dump_id,
+'account' as Attendee_Type_vod__c,
+acc.firstname||acc.lastname as Attendee_Name_vod__c,
+acc.external_id,
+stg.event_id||'_'||acc.external_id as external_id_vod__c,
+(case when att.id is null and stg.action = 'New' and stg.status_vod__c in ('Nominated_vod','Invited_vod' ) then 'Insert' 
+when att.id is not null and stg.status_vod__c in ('Accepted_vod', 'No Show','Attended_vod') and stg.action  = 'Upsert' then 'Update'
+when stg.action ='Delete' then 'Delete' else 'Rejected' end) as Flag 
+from emea.stg_backoffice_attendee stg
+left outer join emea.xref_account_onecrm acc
+on (stg.attendee_id = acc.external_id or  stg.attendee_id= acc.ok_external_id )
+and stg.sa_country_code__c =acc.country_code
+left outer join emea.xref_country_onecrm cntry on cntry.country_name=stg.sa_country_code__c
+left outer join emea.xref_em_event_onecrm evt on stg.event_id = evt.sa_event_id__c
+left outer join emea.xref_user_onecrm usr on stg.user_id = usr.federation_identifier
+left outer join emea.stg_backoffice_attendee_dump att on att.id = acc.sfa_id and  stg.event_id = evt.sfa_id.
+WRITER_1_*_1> WRT_8167 [2024-07-04 16:03:32.406] Start loading table [dal_backoffice_attendee_final_load: Partition 1] at: Thu Jul 04 16:03:32 2024
+TRANSF_1_1_1> DBG_21216 [2024-07-04 16:03:32.408] Finished transformations for Source Qualifier [src_stg_attendee]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2024-07-04 16:03:32.423] Start loading table [err_backoffice_attendee: Partition 1] at: Thu Jul 04 16:03:32 2024
+WRITER_1_*_1> WRT_8167 [2024-07-04 16:03:32.423] Start loading table [dal_backoffice_attendee: Partition 1] at: Thu Jul 04 16:03:32 2024
+WRITER_1_*_1> CMN_1761 [2024-07-04 16:03:32.430] Timestamp Event: [Thu Jul 04 16:03:32 2024]
+WRITER_1_*_1> POSTGRES_10000 [2024-07-04 16:03:32.430] [ERROR] [informatica][PostgreSQL JDBC Driver][PostgreSQL]there is no unique or exclusion constraint matching the ON CONFLICT specification.  The entire batch operation was rolled back.
+WRITER_1_*_1> CMN_1761 [2024-07-04 16:03:32.431] Timestamp Event: [Thu Jul 04 16:03:32 2024]
+WRITER_1_*_1> WRT_8164 [2024-07-04 16:03:32.431] Error loading into target [dal_backoffice_attendee] : [informatica][PostgreSQL JDBC Driver][PostgreSQL]there is no unique or exclusion constraint matching the ON CONFLICT specification.  The entire batch operation was rolled back.
+WRITER_1_*_1> CMN_1053 [2024-07-04 16:03:32.431] : Rowdata: ( RowType=1(update) Src Rowid=1 Targ Rowid=1
+  attendee_id (attendee_id:UniChar.255:): "W734734737373"
+  meal_opt_in_vod__c (meal_opt_in_vod__c:UniChar.255:): "0"
+  status_vod__c (status_vod__c:UniChar.255:): "Nominated_vod"
+  user_id (user_id:UniChar.255:): "I0257132"
+  event_id (event_id:UniChar.255:): "ES23CE-37957"
+  sa_country_code__c (sa_country_code__c:UniChar.255:): "ES"
+  action (action:UniChar.255:): "New"
+  firstname (firstname:UniChar.255:): "(NULL)"
+  lastname (lastname:UniChar.255:): "(NULL)"
+  event_vod__c (event_vod__c:UniChar.255:): "(NULL)"
+  user_sfa_id (user_sfa_id:UniChar.255:): "(NULL)"
+  currency_code (currency_code:UniChar.255:): "EUR"
+  attendee_name_vod__c (attendee_name_vod__c:UniChar.255:): "(NULL)"
+  attendee_type_vod__c (attendee_type_vod__c:UniChar.255:): "account"
+  flag (flag:UniChar.18:): "Insert"
+  status (status:UniChar.18:): "Correct"
+  created_ts (created_ts:Date:): "07/04/2024 16:03:32.000000000"
+  external_id_vod__c (external_id_vod__c:UniChar.500:): "(NULL)"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-07-04 16:03:32.431] Timestamp Event: [Thu Jul 04 16:03:32 2024]
+WRITER_1_*_1> WRT_8164 [2024-07-04 16:03:32.431] Error loading into target [dal_backoffice_attendee] : Failed due to batch roll back
+WRITER_1_*_1> CMN_1053 [2024-07-04 16:03:32.431] : Rowdata: ( RowType=1(update) Src Rowid=2 Targ Rowid=2
+  attendee_id (attendee_id:UniChar.255:): "WESM00070144"
+  meal_opt_in_vod__c (meal_opt_in_vod__c:UniChar.255:): "0"
+  status_vod__c (status_vod__c:UniChar.255:): "Nominated_vod"
+  user_id (user_id:UniChar.255:): "I0560031"
+  event_id (event_id:UniChar.255:): "ES23CE-37957"
+  sa_country_code__c (sa_country_code__c:UniChar.255:): "ES"
+  action (action:UniChar.255:): "New"
+  firstname (firstname:UniChar.255:): "(NULL)"
+  lastname (lastname:UniChar.255:): "(NULL)"
+  event_vod__c (event_vod__c:UniChar.255:): "(NULL)"
+  user_sfa_id (user_sfa_id:UniChar.255:): "(NULL)"
+  currency_code (currency_code:UniChar.255:): "EUR"
+  attendee_name_vod__c (attendee_name_vod__c:UniChar.255:): "(NULL)"
+  attendee_type_vod__c (attendee_type_vod__c:UniChar.255:): "account"
+  flag (flag:UniChar.18:): "Insert"
+  status (status:UniChar.18:): "Correct"
+  created_ts (created_ts:Date:): "07/04/2024 16:03:32.000000000"
+  external_id_vod__c (external_id_vod__c:UniChar.500:): "(NULL)"
+)
+
+WRITER_1_*_1> WRT_8168 [2024-07-04 16:03:32.431] End loading table [dal_backoffice_attendee_final_load: Partition 1] at: Thu Jul 04 16:03:32 2024
+WRITER_1_*_1> WRT_8168 [2024-07-04 16:03:32.431] End loading table [err_backoffice_attendee: Partition 1] at: Thu Jul 04 16:03:32 2024
+WRITER_1_*_1> WRT_8168 [2024-07-04 16:03:32.431] End loading table [dal_backoffice_attendee: Partition 1] at: Thu Jul 04 16:03:32 2024
+WRITER_1_*_1> WRT_8035 [2024-07-04 16:03:32.434] Load complete time: Thu Jul 04 16:03:32 2024
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: dal_backoffice_attendee_final_load: Partition 1 (Instance Name: [dal_backoffice_attendee_final_load])
+WRT_8038 Inserted rows - Requested: 2          Applied: 2          Rejected: 0          Affected: 2         
+
+WRT_8036 Target: err_backoffice_attendee: Partition 1 (Instance Name: [err_backoffice_attendee])
+WRT_8044 No data loaded for this target
+
+
+WRT_8036 Target: dal_backoffice_attendee: Partition 1 (Instance Name: [dal_backoffice_attendee])
+WRT_8041 Updated rows  - Requested: 2          Applied: 0          Rejected: 2          Affected: 0         
+
+
+WRITER_1_*_1> WRT_8043 [2024-07-04 16:03:32.434] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2024-07-04 16:03:32.434] Writer run completed.
+MANAGER> PETL_24031 [2024-07-04 16:03:32.437] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [src_stg_attendee] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [src_stg_attendee] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [dal_backoffice_attendee_final_load, err_backoffice_attendee, dal_backoffice_attendee] has completed. The total run time was insufficient for any meaningful statistics.
+
+MANAGER> PETL_24005 [2024-07-04 16:03:32.440] Starting post-session tasks. : (Thu Jul 04 16:03:32 2024)
+POST-SESS> PETL_24091 [2024-07-04 16:03:32.440] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2024-07-04 16:03:32.440] Post-session task completed successfully. : (Thu Jul 04 16:03:32 2024)
+MAPPING> SDKS_38510 [2024-07-04 16:03:32.441] SDK target and group deinitialized with status [0].
+MAPPING> SDKS_38025 [2024-07-04 16:03:32.441] Plug-in 601301 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38019 [2024-07-04 16:03:32.441] Writer SDK plug-ins deinitialized with status [0].
+MAPPING> SDKS_38025 [2024-07-04 16:03:32.441] Plug-in 601301 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38018 [2024-07-04 16:03:32.441] Reader SDK plug-ins deinitialized with status [0].
+MAPPING> TM_6018 [2024-07-04 16:03:32.441] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2024-07-04 16:03:33.020] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2024-07-04 16:03:33.020] Session run completed successfully.
+DIRECTOR> VAR_27048 [2024-07-04 16:03:33.020] Persisting mapping variable values to the repository.
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$SRC_Schema], persisted value: [emea], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$TGT_Schema], persisted value: [emea], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Metric_config_NASPath], persisted value: [\\e11flsinfashareddev.pharma.aventis.com\infa_ecld_dev_infashared\projects\GEM_SFA\Backoffice], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_product_catalog_lastmodifieddate], persisted value: [2024-07-01T05:34:43+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$ff_src_connection], persisted value: [1CRM_FF_SRC], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$LOV_product_visibility], persisted value: [MEDICAL','COMMERCIAL','COMMERCIAL;MEDICAL], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_survey_lastmodifieddate], persisted value: [2024-01-24T03:02:41+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_user_lastmodifieddate], persisted value: [2023-10-04T23:20:34+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_surveyquestion_lastmodifieddate], persisted value: [2024-01-23T02:43:28+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_xref_product_catalog_lastmodifieddate], persisted value: [2024-04-29T02:10:37+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$LOV_product_type], persisted value: [BRC','DETAIL','DETAILGROUP','DETAILTOPIC','HIGHVALUEPROMOTIONAL','PROMOTIONAL','REPRINT','SAMPLE','SAMPLEPRODUCTGROUP','INVENTORYMONITORING], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_Attendee_lastmodifieddate], persisted value: [2024-03-07T07:04:25+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_xref_productmetrics_lastmodifieddate], persisted value: [2023-09-14T22:57:10+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_account_lastmodifieddate], persisted value: [2023-09-27T09:59:49+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Record_Type_TOT], persisted value: [SA_Integration_TOT], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_territory_lastmodifieddate], persisted value: [2022-05-17T02:14:50+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_TSF_Valid_File_Path], persisted value: [/infashared/projects/1CRM/TEMP/Backoffice_Files/EMEA/TSF/Valid], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_xref_account_lastmodifieddate], persisted value: [2023-09-06T07:10:42+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_xref_product_group_lastmodifieddate], persisted value: [2023-09-14T05:03:53+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_product_catalog_lastmodifieddate], persisted value: [2024-03-06T01:43:54+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_product_catalog_lastmodifieddate], persisted value: [2024-04-25T00:44:51+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_product_group_lastmodifieddate], persisted value: [2024-07-01T05:39:35+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_atl_lastmodifieddate], persisted value: [2023-05-30T17:49:15+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_product_group_lastmodifieddate], persisted value: [2024-03-10T23:57:10+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_survey_lastmodifieddate], persisted value: [2024-01-24T02:39:42+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_userterritory_lastmodifieddate], persisted value: [2023-12-05T06:58:32+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_tsf_lastmodifeddate], persisted value: [2024-03-15T02:09:46+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_product_catalog_lastmodifieddate], persisted value: [2024-03-10T23:52:25+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_product_group_lastmodifieddate], persisted value: [2022-11-29T22:43:52+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_Survey_Valid_File_Path], persisted value: [/infashared/projects/1CRM/TEMP/Backoffice_Files/EMEA/Survey/Valid], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_Surveytarget_Valid_File_Path], persisted value: [/infashared/projects/1CRM/TEMP/Backoffice_Files/EMEA/Surveytarget/Valid], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_Surveyquestion_Valid_File_Path], persisted value: [/infashared/projects/1CRM/TEMP/Backoffice_Files/EMEA/Surveyquestion/Valid], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_productmetrics_lastmodifieddate], persisted value: [2024-06-26T06:33:07+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_product_group_lastmodifieddate], persisted value: [2024-03-10T23:57:17+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_survey_lastmodifieddate], persisted value: [2024-01-24T04:28:05+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_Questionresponse_Valid_File_Path], persisted value: [/infashared/projects/1CRM/TEMP/Backoffice_Files/EMEA/Questionresponse/Valid], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_surveytarget_lastmodifieddate], persisted value: [2024-01-15T00:14:37+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_survey_lastmodifieddate], persisted value: [2024-01-23T01:49:49+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$xref_new_date], persisted value: [-8], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_Good], persisted value: [Good], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_Bad], persisted value: [Bad], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_Error], persisted value: [Error], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_Correct], persisted value: [Correct], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_Rejected], persisted value: [Rejected], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_TRUE], persisted value: [TRUE], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$Val_flag_FALSE], persisted value: [FALSE], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_veeva_connection], persisted value: [1CRM_SALESFORCE_VEEVA-EMEA_EMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_NASPath], persisted value: [\\e11flsinfashareddev.pharma.aventis.com\infa_ecld_dev_infashared\projects\GEM_SFA\Backoffice\EMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_NASPath], persisted value: [\\e11flsinfashareddev.pharma.aventis.com\infa_ecld_dev_infashared\projects\GEM_SFA\Backoffice\RMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_NASPath], persisted value: [\\e11flsinfashareddev.pharma.aventis.com\infa_ecld_dev_infashared\projects\GEM_SFA\Backoffice\APAC], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_NASPath], persisted value: [\\e11flsinfashareddev.pharma.aventis.com\infa_ecld_dev_infashared\projects\GEM_SFA\Backoffice\AMER], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_NASPath], persisted value: [\\e11flsinfashareddev.pharma.aventis.com\infa_ecld_dev_infashared\projects\GEM_SFA\Backoffice\JAPAN], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_atl_lastmodifieddate], persisted value: [2023-08-08T22:03:43+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_surveyquestion_lastmodifieddate], persisted value: [2024-01-23T01:49:49+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_surveyquestion_lastmodifieddate], persisted value: [2024-01-23T01:58:36+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_surveytarget_lastmodifieddate], persisted value: [2024-01-22T01:12:23+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_recordtype_lastmodifieddate], persisted value: [1900-01-01T08:33:56+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_veeva_connection], persisted value: [1CRM_SALESFORCE_VEEVA-EMEA2_EMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_veeva_connection], persisted value: [1CRM_SALESFORCE_VEEVA-JAPAN_APAC], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$ff_storage_connection], persisted value: [1CRM_FF_STORAGE], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_productmetrics_lastmodifieddate], persisted value: [2023-03-17T02:25:27+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_territory_lastmodifieddate], persisted value: [2023-09-07T20:36:13+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_user_lastmodifieddate], persisted value: [2023-09-05T00:18:20+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_userterritory_lastmodifieddate], persisted value: [2023-08-08T22:03:12+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_user_lastmodifieddate], persisted value: [2023-08-28T23:01:05+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_user_lastmodifieddate], persisted value: [2023-06-28T08:16:55+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_userterritory_lastmodifieddate], persisted value: [2022-11-21T09:49:36+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_productmetrics_lastmodifieddate], persisted value: [2024-04-04T10:25:45+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_account_lastmodifieddate], persisted value: [2023-09-27T10:02:05+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_surveytarget_lastmodifieddate], persisted value: [2024-01-16T01:55:19+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_recordtype_lastmodifieddate], persisted value: [1990-01-01T00:00:00+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_recordtype_lastmodifieddate], persisted value: [1990-01-01T00:00:00+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_recordtype_lastmodifieddate], persisted value: [1990-01-01T00:00:00+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_territory_lastmodifieddate], persisted value: [2022-11-21T09:31:09+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_tsf_lastmodifeddate], persisted value: [2023-09-26T03:01:50+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_tsf_lastmodifeddate], persisted value: [2023-09-07T21:06:09+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_veeva_connection], persisted value: [1CRM_SALESFORCE_VEEVA-AMER_AMER], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_veeva_connection], persisted value: [1CRM_SALESFORCE_VEEVA-APAC_APAC], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_xref_productmetrics_lastmodifieddate], persisted value: [2023-09-16T09:38:12+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$ff_temp_connection], persisted value: [1CRM_FF_TEMP], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_schema], persisted value: [EMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$JAPAN_schema], persisted value: [JAPAN], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_schema], persisted value: [AMER], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$RMEA_schema], persisted value: [RMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_surveyquestion_lastmodifieddate], persisted value: [2024-01-23T02:30:44+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_surveytarget_lastmodifieddate], persisted value: [2024-01-22T02:12:50+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_atl_lastmodifieddate], persisted value: [2022-08-30T07:06:15+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_territory_lastmodifieddate], persisted value: [2023-08-23T04:33:21+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_userterritory_lastmodifieddate], persisted value: [2021-03-01T22:11:52+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$postgres_feeder_connection], persisted value: [1CRM_PSQL_GIP-FEEDER_EMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$postgres_reader_connection], persisted value: [1CRM_PSQL_GIP-READER_EMEA], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$EMEA_xref_atl_lastmodifieddate], persisted value: [2023-04-10T07:51:00+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_tsf_lastmodifeddate], persisted value: [2023-09-29T02:01:07+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$AMER_xref_account_lastmodifieddate], persisted value: [2023-09-27T09:55:27+0000], run instance name [].
+DIRECTOR> VAR_27049 [2024-07-04 16:03:33.020] Mapping variable name: [$$APAC_xref_account_lastmodifieddate], persisted value: [2023-08-30T14:23:30+0000], run instance name [].
+DIRECTOR> TM_6022 [2024-07-04 16:03:33.021] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2024-07-04 16:03:33.021] Source Load Summary.
+DIRECTOR> CMN_1740 [2024-07-04 16:03:33.021] Table: [src_stg_attendee] (Instance Name: [src_stg_attendee] Instance UI Name: [src_stg_attendee])
+	 Output Rows [2], Affected Rows [2], Applied Rows [2], Rejected Rows [0]
+DIRECTOR> TM_6253 [2024-07-04 16:03:33.021] Target Load Summary.
+DIRECTOR> CMN_1740 [2024-07-04 16:03:33.021] Table: [dal_backoffice_attendee_final_load] (Instance Name: [dal_backoffice_attendee_final_load] Instance UI Name: [tgt_dal_backoffice_attendee_final_load])
+	 Output Rows [2], Affected Rows [2], Applied Rows [2], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2024-07-04 16:03:33.021] Table: [err_backoffice_attendee] (Instance Name: [err_backoffice_attendee] Instance UI Name: [tgt_err_backoffice_product])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [0]
+DIRECTOR> CMN_1740 [2024-07-04 16:03:33.021] Table: [dal_backoffice_attendee] (Instance Name: [dal_backoffice_attendee] Instance UI Name: [tgt_dal])
+	 Output Rows [0], Affected Rows [0], Applied Rows [0], Rejected Rows [2]
+DIRECTOR> TM_6023 [2024-07-04 16:03:33.021] 
+===================================================
+
+DIRECTOR> TM_6020 [2024-07-04 16:03:33.021] Session [s_mtt_001Y8Y0Z000000002J1J] completed at [Thu Jul 04 16:03:33 2024].

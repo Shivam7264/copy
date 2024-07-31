@@ -1,0 +1,794 @@
+Agent Group Id: 001Y8X2500000000000F
+Agent Group Name: emea-sa-aws-cloud-ag-001
+Agent Name: xsnl70k232s.pharma.aventis.com
+Agent Id: 001Y8X0800000000000D
+Task Name: mct_m_1crm_xborder_dal_to_veeva_sa_intl_cont_req
+Task Type: MTT
+Task Id: 001Y8X0Z000000000AGF
+Run Id: 301
+Service Id: 2280300
+Started By: latika.hassija-ext@sanofi.com.saml4
+Run Context Type: REST_API_V2
+04/12/2024 17:59:40 **** Importing Connection: Conn_001Y8X0B0000000000VU ...
+04/12/2024 17:59:40 **** Importing Connection: Conn_001Y8X0B0000000000VS ...
+04/12/2024 17:59:40 **** Importing Source Definition: DUMMY_Source_DAL ...
+04/12/2024 17:59:40 **** Importing Target Definition: SA_International_Contributor_Request__c ...
+04/12/2024 17:59:40 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  DUMMY_Source_DAL...
+    Validating Target Definition  SA_International_Contributor_Request__c...
+04/12/2024 17:59:40 **** Importing Mapping: Mapping0 ...
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+    <Warning> :  Invalid table attribute: Exec SQL
+04/12/2024 17:59:40 **** Importing Workflow: wf_mtt_001Y8X0Z000000000AGF ...
+    <Warning> :  invalid attribute Append if Exists for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000AGF >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  invalid attribute Header Options for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000AGF >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  invalid attribute Create Target Directory for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000AGF >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  invalid attribute Output Type for element ATTRIBUTE    [Session< s_mtt_001Y8X0Z000000000AGF >  --> SalesForce Writer_New< SalesForce Writer_New > ] 
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_001Y8X0Z000000000AGF > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+[Summary for Application Source Qualifier Source_DAL]
+     Is a new repartition point.
+     Partition type changed from None to Pass Through.
+Successfully extracted session instance [s_mtt_001Y8X0Z000000000AGF].  Starting repository sequence id is [2023604256]
+======================================================================
+PETL_24036 [2024-04-12 17:59:39.710] Beginning the prepare phase for the session.
+TM_6721 [2024-04-12 17:59:39.710] Started [Connect to Repository].
+TM_6722 [2024-04-12 17:59:40.095] Finished [Connect to Repository].  It took [0.385214] seconds.
+TM_6721 [2024-04-12 17:59:40.095] Started [Fetch Session from Repository].
+TM_6722 [2024-04-12 17:59:40.159] Finished [Fetch Session from Repository].  It took [0.0638051] seconds.
+VAR_27085 [2024-04-12 17:59:40.160] Parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8X0Z000000000AGF.param] is opened for [session [wf_mtt_001Y8X0Z000000000AGF.s_mtt_001Y8X0Z000000000AGF]].
+VAR_27062 [2024-04-12 17:59:40.160] Warning! Cannot find section for worklet [wf_mtt_001Y8X0Z000000000AGF] and folder [] in parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8X0Z000000000AGF.param].
+TM_6721 [2024-04-12 17:59:40.180] Started [Partition Group Formation].
+TM_6722 [2024-04-12 17:59:40.180] Finished [Partition Group Formation].  It took [0.000257969] seconds.
+PETL_24037 [2024-04-12 17:59:40.180] Finished the prepare phase for the session.
+DIRECTOR> TM_6228 [2024-04-12 17:59:40.181] Writing session output to log file [/infashared/platform/sessionlogs/s_mtt_3Il6nU7w3dwlQ9GviaMMGZ_1.log].
+DIRECTOR> VAR_27085 [2024-04-12 17:59:40.189] Parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8X0Z000000000AGF.param] is opened for [session [wf_mtt_001Y8X0Z000000000AGF.s_mtt_001Y8X0Z000000000AGF]].
+DIRECTOR> VAR_27062 [2024-04-12 17:59:40.189] Warning! Cannot find section for worklet [wf_mtt_001Y8X0Z000000000AGF] and folder [] in parameter file [/software/ICSA/apps/Data_Integration_Server/data/parameters/s_mtt_001Y8X0Z000000000AGF.param].
+DIRECTOR> TM_6014 [2024-04-12 17:59:40.189] Initializing session [s_mtt_001Y8X0Z000000000AGF] at [Fri Apr 12 17:59:40 2024].
+DIRECTOR> TM_6683 [2024-04-12 17:59:40.189] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2024-04-12 17:59:40.189] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2024-04-12 17:59:40.189] Folder: []
+DIRECTOR> TM_6685 [2024-04-12 17:59:40.189] Workflow: [wf_mtt_001Y8X0Z000000000AGF] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2024-04-12 17:59:40.189] Operating System Type [Linux]
+DIRECTOR> TM_6101 [2024-04-12 17:59:40.189] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2024-04-12 17:59:40.190] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2024-04-12 17:59:40.190] Session [s_mtt_001Y8X0Z000000000AGF] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0321].
+MANAGER> PETL_24091 [2024-04-12 17:59:40.219] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2024-04-12 17:59:40.219] Running Partition Group [1].
+MANAGER> PETL_24000 [2024-04-12 17:59:40.219] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2024-04-12 17:59:40.220] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2024-04-12 17:59:40.220] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2024-04-12 17:59:40.220] Initializing session run.
+MAPPING> PETL_24091 [2024-04-12 17:59:40.220] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2024-04-12 17:59:40.221] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2024-04-12 17:59:40.221] Server Code page: [UTF-8 encoding of Unicode]
+MAPPING> TM_6151 [2024-04-12 17:59:40.221] The session sort order is [Binary].
+MAPPING> TM_6185 [2024-04-12 17:59:40.221] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2024-04-12 17:59:40.221] Current Timezone:[UTC +1:0]
+MAPPING> CMN_65111 [2024-04-12 17:59:40.221] Current Process ID:[27124]
+MAPPING> TM_6155 [2024-04-12 17:59:40.221] Using HIGH precision processing.
+MAPPING> TM_6180 [2024-04-12 17:59:40.221] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2024-04-12 17:59:40.221] Session target-based commit interval is [10000].
+MAPPING> PMJVM_42020 [2024-04-12 17:59:40.224] [INFO] Loaded library : /software/ICSA/apps/jdk/zulu8.70.0.52-sa-fx-jdk8.0.372/jre/lib/amd64/server/libjvm.so.
+MAPPING> PMJVM_42009 [2024-04-12 17:59:40.275] [INFO] Created Java VM successfully.
+MAPPING> SDKS_38029 [2024-04-12 17:59:40.317] Loaded plug-in 601301: [plugin description].
+MAPPING> SDKS_38024 [2024-04-12 17:59:40.336] Plug-in 601301 initialization complete.
+MAPPING> SDKS_38016 [2024-04-12 17:59:40.336] Reader SDK plug-in initialization complete.
+MAPPING> SDKS_38029 [2024-04-12 17:59:40.338] Loaded plug-in 500100: [plugin description].
+MAPPING> SDKS_38024 [2024-04-12 17:59:40.343] Plug-in 500100 initialization complete.
+MAPPING> SDKS_38017 [2024-04-12 17:59:40.343] Writer SDK plug-in initialization complete.
+MAPPING> SDKS_38509 [2024-04-12 17:59:40.578] SDK target and group initialization complete.
+MAPPING> TM_6307 [2024-04-12 17:59:40.578] DTM error log disabled. 
+MAPPING> TE_7022 [2024-04-12 17:59:40.578] TShmWriter: Initialized
+MAPPING> TM_6007 [2024-04-12 17:59:40.852] DTM initialized successfully for session [s_mtt_001Y8X0Z000000000AGF]
+DIRECTOR> PETL_24033 [2024-04-12 17:59:40.853] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2024-04-12 17:59:40.853] Starting pre-session tasks. : (Fri Apr 12 17:59:40 2024)
+PRE-SESS> PETL_24091 [2024-04-12 17:59:40.853] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2024-04-12 17:59:40.854] Pre-session task completed successfully. : (Fri Apr 12 17:59:40 2024)
+DIRECTOR> PETL_24006 [2024-04-12 17:59:40.854] Starting data movement.
+MAPPING> TM_6966 [2024-04-12 17:59:40.855] Reducing estimate of the amount of buffer pool memory required for high performance.
+MAPPING> TM_6660 [2024-04-12 17:59:40.855] Total Buffer Pool size is 83926080 bytes and Block size is 8388608 bytes.
+MAPPING> CONNECTOR_10000 [2024-04-12 17:59:41.994] [INFO] The source or cached lookup object at runtime is overridden with the parameter name = CUSTOM_TABLE table name = CUSTOM_TABLE.
+READER_1_1_1> PETL_24091 [2024-04-12 17:59:42.151] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> CONNECTOR_10000 [2024-04-12 17:59:42.210] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Read data
+READER_1_1_1> POSTGRES_10000 [2024-04-12 17:59:42.549] [INFO] Connection is successful with JDBC connection string jdbc:informatica:postgresql://sanofi-emea-rds-01-vax-uat-feeder.p041714224494.aws-emea.sanofi.com:5432;CATALOGOPTIONS=2;CONNECTIONRETRYDELAY=1;BULKLOADBATCHSIZE=1000;DATABASENAME=vaxforce;CRYPTOPROTOCOLVERSION=TLSv1.2;MAXPOOLEDSTATEMENTS=0;USESYSTEMPROXYOPTIONS=false;KEYSTORE=;PROGRAMID=;TRUSTSTOREPASSWORD=***;VALIDATESERVERCERTIFICATE=false;MAXVARCHARSIZE=10485760;KEYSTOREPASSWORD=***;CONNECTIONRETRYCOUNT=5;BATCHPERFORMANCEWORKAROUND=false;INITIALIZATIONSTRING=;FAILOVERPRECONNECT=false;SOCKETDEFAULTSENDBUFFERSIZE=0;SECURERANDOMALGORITHM=;REGISTERSTATEMENTPOOLMONITORMBEAN=false;RESULTSETMETADATAOPTIONS=0;CLIENTUSER=;SUPPORTSCATALOGS=true;QUERYTIMEOUT=0;FAILOVERGRANULARITY=nonAtomic;HOSTNAMEINCERTIFICATE=;APPLICATIONNAME=Informatica;JAVADOUBLETOSTRING=false;LOADLIBRARYPATH=;IMPORTSTATEMENTPOOL=;ALTERNATESERVERS=;BATCHMECHANISM=;MAXLONGVARCHARSIZE=1073741823;MAXNUMERICSCALE=998;KEYPASSWORD=***;EXTENDEDCOLUMNMETADATA=false;RANDOMGENERATOR=SECURERANDOM;ENCRYPTIONMETHOD=SSL;ACCOUNTINGINFO=;CONVERTNULL=1;TRUSTSTORE=;JDBCBEHAVIOR=1;FAILOVERMODE=connect;AUTHENTICATIONMETHOD=userIdPassword;LOGINTIMEOUT=0;SOCKETDEFAULTRECEIVEBUFFERSIZE=0;LOADBALANCING=false;ISTLSTUNNEL=false;TRANSACTIONERRORBEHAVIOR=RollbackTransaction;WORKAROUNDS=0;INSENSITIVERESULTSETBUFFERSIZE=2048;CLIENTHOSTNAME=;ENABLEPREPARETHRESHOLD=false;KEEPALIVES=1;VARCHARCLOBTHRESHOLD=32768;MAXNUMERICPRECISION=1000;PREPARETHRESHOLD=1;CALLESCAPEBEHAVIOR=CallIfNoReturn
+READER_1_1_1> POSTGRES_10000 [2024-04-12 17:59:42.550] [INFO] Fetch size to read source data is: 100,000.
+TRANSF_1_1_1> PETL_24091 [2024-04-12 17:59:42.552] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2024-04-12 17:59:42.553] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> SalesforceConnection_10058 [2024-04-12 17:59:42.624] [INFO] Proxy Host : [emea-temp-informatica.p444577932277.aws-emea.sanofi.com] Proxy Port : [3128]
+WRITER_1_*_1> SalesforceConnection_10048 [2024-04-12 17:59:44.207] [INFO] Account[integration.user@sanofi.crossborder.Full] logged on salesforce.com at [https://test.salesforce.com/services/Soap/u/49.0].
+WRITER_1_*_1> SalesforceConnection_10147 [2024-04-12 17:59:44.207] [INFO] Logged on salesforce.com in [Standard] mode.
+WRITER_1_*_1> SFDC_WRITER_10072 [2024-04-12 17:59:44.215] [INFO] The UseExternalId attribute is set. The Integration Service will use external Id [SA_External_ID__c] for upsert operations.
+WRITER_1_*_1> SFDC_WRITER_10065 [2024-04-12 17:59:44.215] [INFO] Inserted Target Batch Size [200].
+WRITER_1_*_1> GENERIC_WRITER_10036 [2024-04-12 17:59:44.218] [WARNING] Success file directory is empty or starts with a $. Defaulting it to $PMTargetFileDir.
+WRITER_1_*_1> GENERIC_WRITER_10037 [2024-04-12 17:59:44.218] [WARNING] Error file directory is empty or starts with a $. Defaulting it to $PMBadFileDir.
+WRITER_1_*_1> SFDC_WRITER_10112 [2024-04-12 17:59:44.229] [INFO] The Save Success Rows option is set. The success file [/infashared/projects/1CRM/SRCFILES/s_mtt_001Y8X0Z000000000AGF_4_12_2024_17_59_standard_success.csv] will be generated.
+WRITER_1_*_1> SFDC_WRITER_10113 [2024-04-12 17:59:44.233] [INFO] The Save Error Rows option is set. The error file [/infashared/platform/error/s_mtt_001Y8X0Z000000000AGF_4_12_2024_17_59_standard_error.csv] will be generated.
+WRITER_1_*_1> WRT_8270 [2024-04-12 17:59:44.235] Target connection group #1 consists of target(s) [SA_International_Contributor_Request__c: Partition 1]
+WRITER_1_*_1> WRT_8003 [2024-04-12 17:59:44.235] Writer initialization complete.
+WRITER_1_*_1> WRT_8005 [2024-04-12 17:59:44.235] Writer run started.
+WRITER_1_*_1> WRT_8158 [2024-04-12 17:59:44.235] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Fri Apr 12 17:59:44 2024
+
+Target tables:
+
+     SA_International_Contributor_Request__c: Partition 1
+
+
+READER_1_1_1> POSTGRES_10000 [2024-04-12 17:59:44.263] [INFO] SQL query to read source data is: select sa_event_engagement_project__c,sa_country__c,sa_first_name__c,sa_last_name__c,sa_start_date__c,sa_end_date__c,sa_preparation_time_hrs__c,sa_delivery_time_hrs__c,sa_estimated_honorarium__c,currencyisocode,sa_sanofi_legal_entity__c,sa_contract_via_organization__c,sa_relation_with_organization__c,sa_comments__c,sa_no_of_breakfast__c,sa_no_of_lunches__c,sa_no_of_dinners__c,sa_no_of_snacks__c,sa_max_anticipated_days__c,sa_expert_type__c,sa_expert_role__c,sa_description_of_services__c,sa_reason_for_selecting_expert__c,sa_delivrables__c,org,status,created_ts,updated_ts,sfaid,sa_status__c,sa_justification_for_invalid_status__c
+from xbord.dal_in_sa_intl_cont_req 
+where status='Dal_loaded'.
+WRITER_1_*_1> WRT_8167 [2024-04-12 17:59:44.273] Start loading table [SA_International_Contributor_Request__c: Partition 1] at: Fri Apr 12 17:59:44 2024
+WRITER_1_*_1> SFDC_WRITER_10075 [2024-04-12 17:59:44.274] [INFO] Target [SA_International_Contributor_Request__c] enables treat update as upsert. [IdLookup field]: [SA_External_ID__c].
+TRANSF_1_1_1> DBG_21216 [2024-04-12 17:59:44.277] Finished transformations for Source Qualifier [Source_DAL]. Total errors [0] 
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.707] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.707] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.707] : Rowdata: ( RowType=1(update) Src Rowid=22 Targ Rowid=22
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "CHF"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "No"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4cgUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_End_Date__c (SA_End_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "1200.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Wolfgang Rolf"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Pohl"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk93AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XG50000002RaPMAU"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.707] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.707] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.707] : Rowdata: ( RowType=1(update) Src Rowid=23 Targ Rowid=23
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "CHF"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "No"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4dVUAT"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "Mr. Wolfgang Körber"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_End_Date__c (SA_End_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "15000.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Wolfgang"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Körber"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix x-border"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk93AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XG50000002RYnMAM"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=26 Targ Rowid=26
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "TND"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4dBUAT"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "TN_EG_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XQ10000000085MAA"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=30 Targ Rowid=30
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "CHF"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "No"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4cgUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_End_Date__c (SA_End_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "1300.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Wolfgang Rolf"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Pohl"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk93AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XG50000002Rc1MAE"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=34 Targ Rowid=34
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "CHF"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "No"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4cgUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Wolfram"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Hötzenecker"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk93AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XG50000002RLtMAM"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=35 Targ Rowid=35
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "CHF"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "No"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4dVUAT"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_End_Date__c (SA_End_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "1000.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Zoltan"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Biro"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "04/10/2024 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XG50000002RNVMA2"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "CH MD Test UAT PMO 7572 - Bugfix"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=38 Targ Rowid=38
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "THB"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4f1UAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "SG_TH_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X0T00000007wRUAQ"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=44 Targ Rowid=44
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "EUR"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4dVUAT"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "Összefoglaló a témában készült tudományos írásokból az elmúlt évből.
+Az előadáson látható prezentáció jegyzetekkel kibővített verziója.
+A résztvevőknek kiosztott összefoglaló brosúrák a témáról."
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "Tudományos előadás a különböző terápiák eredményességéről"
+  SA_End_Date__c (SA_End_Date__c:Date:): "08/01/2023 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "1000.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Karl"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Weber"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "1"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "2"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "Az előadó a téma egyik legsikeresebb külföldi képviselője, és egyik legeredményesebb kutatója."
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "08/01/2023 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7U5t0000000GETEA2"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=65 Targ Rowid=65
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "HKD"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000Iy42VUAR"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "HK_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X0T00000006hPUAQ"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=67 Targ Rowid=67
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "TWD"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4e4UAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "TW_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X0T00000006hKUAQ"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.708] : Rowdata: ( RowType=1(update) Src Rowid=68 Targ Rowid=68
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "ZAR"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4cjUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "ZA_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X7E000001FodkUAC"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.708] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.708] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [INVALID_FIELD_FOR_INSERT_UPDATE].  Message [Attempting to update (as part of an upsert) parent field SA_Event_Engagement_Project__c with new value a3a0C000000pJDeQAM, current value is a3a8e0000015BGQAA2].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.709] : Rowdata: ( RowType=1(update) Src Rowid=69 Targ Rowid=69
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "EUR"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "a3a0C000000pJDeQAM"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "A podcast which contains of 8 episode - all about treatable traits in severe asthma. The goal is to raise awareness of the importance of looking into all the treatable traits when dealing with severe asthma. This is an educational podcast driven by three (DISPLAY TRUNCATED)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4eoUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "4"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "Following time will be expected to be used:
+
+Ian Pavord: 15 Hours. (Manuscript: 6, alignment with Backer, Gibson: 1, preparation for each recording: 2, Recording: 4, approval of episodes: 2)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "Podcast: Treatable Traits in severe Asthma by Prof. Backer, Peter Gibson and Ian Pavord
+a serial of 8 episodes. Prof. Backer will be in charge of all serials and the main speaker throughout all episodes and invites Gibson and Pavord to some of the episode(DISPLAY TRUNCATED)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "09/01/2023 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "0.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Ian"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Pavord"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "11"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "Ian Pavord is one of the most knowledgeable SL in the world when it comes to Treatable Traits. He has together with Vibeke Backer and Peter Gibson written a book Treatable traits - the Asthmas which were published in September 2022 and are very motivated (DISPLAY TRUNCATED)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk95AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "03/10/2023 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X68000000oREqEAM"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.709] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.709] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.709] : Rowdata: ( RowType=1(update) Src Rowid=70 Targ Rowid=70
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "EUR"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4dFUAT"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "5"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Jane"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Doe"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "5"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X0T00000006gRUAQ"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.709] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.709] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [INVALID_FIELD_FOR_INSERT_UPDATE].  Message [Attempting to update (as part of an upsert) parent field SA_Event_Engagement_Project__c with new value a3a0C000000pJDeQAM, current value is a3a8e0000015BGQAA2].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.709] : Rowdata: ( RowType=1(update) Src Rowid=72 Targ Rowid=72
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "AUD"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "a3a0C000000pJDeQAM"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "A podcast which contains of 8 episode - all about treatable traits in severe asthma. The goal is to raise awareness of the importance of looking into all the treatable traits when dealing with severe asthma. This is an educational podcast driven by three (DISPLAY TRUNCATED)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4bkUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "5"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "Following time will be expected to be used:
+
+Peter Gibson: 17 (Manuscript: 6, alignment with Backer, Pavord: 1, preparation for each recording: 3, Recording: 5, approval of episodes: 2)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "Podcast: Treatable Traits in severe Asthma by Prof. Backer, Peter Gibson and Ian Pavord
+a serial of 8 episodes. Prof. Backer will be in charge of all serials and the main speaker throughout all episodes and invites Gibson and Pavord to some of the episode(DISPLAY TRUNCATED)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "09/01/2023 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "0.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Peter"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Gibson"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "12"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "Peter Gibson is one of the most knowledgeable SL in the world when it comes to Treatable Traits. He has together with Vibeke Backer and Ian Pavord written a book Treatable traits - the Asthmas which were published in September 2022 and are very motivated (DISPLAY TRUNCATED)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk95AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "03/10/2023 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X68000000oRElEAM"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.709] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.709] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [INVALID_FIELD_FOR_INSERT_UPDATE].  Message [Attempting to update (as part of an upsert) parent field SA_Event_Engagement_Project__c with new value a3aPt000000BfWjIAK, current value is a3a8e000000GrxKAAS].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.709] : Rowdata: ( RowType=1(update) Src Rowid=73 Targ Rowid=73
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "EUR"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "a3aPt000000BfWjIAK"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "Yes"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4cnUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "40min presentation: "Spannende Zeiten rund um schweres Asthma - was gibt's Neues?"
+20min presentation: "(Re-)Mission possible oder was bringt die Zukunft?"
+20min Panel Discussion & interaction with Plenum"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "1.	Preparation Time: 3h. Pre-discussion + exchange via email (20min) – individual preparation time: creating at least 10 new slides, incl. creation of new casuistry (2h) – additional consultation with co-speakers, final discussion (20min) – preparation ti(DISPLAY TRUNCATED)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "04/27/2023 00:00:00.000000000"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "2356.00"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "Speaker"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "HCP"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "Roland"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "Buhl"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "1"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "1"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "1"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "1"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "1"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "3"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "Prof. Buhl is an international expert in the field of respiratory, resp. severe asthma, having a
+good, broad clinical experience with biologics (incl. dupilumab).
+We don’t have this experience/expertise inhouse at Sanofi."
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "a3e8e000000wk93AAA"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "04/27/2023 00:00:00.000000000"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X68000000oRECEA2"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.709] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.709] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.709] : Rowdata: ( RowType=1(update) Src Rowid=80 Targ Rowid=80
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "MAD"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4dBUAT"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "MA_EG_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7XQ1000000009hMAA"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.874] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.874] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.874] : Rowdata: ( RowType=1(update) Src Rowid=81 Targ Rowid=81
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "THB"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4cbUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "TH_UA_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X0T00000007xFUAQ"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> CMN_1761 [2024-04-12 17:59:44.874] Timestamp Event: [Fri Apr 12 17:59:44 2024]
+WRITER_1_*_1> WRT_8164 [2024-04-12 17:59:44.874] Error loading into target [SA_International_Contributor_Request__c] : Error received from salesforce.com.  Fields [SA_Event_Engagement_Project__c].  Status code [REQUIRED_FIELD_MISSING].  Message [Required fields are missing: [SA_Event_Engagement_Project__c]].
+WRITER_1_*_1> CMN_1053 [2024-04-12 17:59:44.874] : Rowdata: ( RowType=1(update) Src Rowid=93 Targ Rowid=93
+  CurrencyIsoCode (CurrencyIsoCode:UniChar.3:): "VND"
+  SA_Event_Engagement_Project__c (SA_Event_Engagement_Project__c:UniChar.18:): "(NULL)"
+  SA_Comments__c (SA_Comments__c:UniChar.32768:): "(NULL)"
+  SA_Contract_via_Organization__c (SA_Contract_via_Organization__c:UniChar.255:): "(NULL)"
+  SA_Country__c (SA_Country__c:UniChar.18:): "a3L4L00000CQ4ejUAD"
+  SA_Delivery_Time_Hrs__c (SA_Delivery_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Delivrables__c (SA_Delivrables__c:UniChar.1000:): "(NULL)"
+  SA_Description_of_Services__c (SA_Description_of_Services__c:UniChar.3500:): "(NULL)"
+  SA_End_Date__c (SA_End_Date__c:Date:): "(NULL)"
+  SA_Estimated_Honorarium__c (SA_Estimated_Honorarium__c:Dec18Fixed.2:): "(NULL)"
+  SA_Expert_Role__c (SA_Expert_Role__c:UniChar.255:): "(NULL)"
+  SA_Expert_Type__c (SA_Expert_Type__c:UniChar.255:): "(NULL)"
+  SA_First_Name__c (SA_First_Name__c:UniChar.80:): "International Contributor"
+  SA_Last_Name__c (SA_Last_Name__c:UniChar.80:): "VN_PH_1"
+  SA_Max_Anticipated_Days__c (SA_Max_Anticipated_Days__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Breakfast__c (SA_No_of_Breakfast__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Dinners__c (SA_No_of_Dinners__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Lunches__c (SA_No_of_Lunches__c:Dec18Fixed.0:): "(NULL)"
+  SA_No_of_Snacks__c (SA_No_of_Snacks__c:Dec18Fixed.0:): "(NULL)"
+  SA_Preparation_Time_Hrs__c (SA_Preparation_Time_Hrs__c:Dec18Fixed.0:): "1"
+  SA_Reason_for_Selecting_Expert__c (SA_Reason_for_Selecting_Expert__c:UniChar.1000:): "(NULL)"
+  SA_Relation_with_Organization__c (SA_Relation_with_Organization__c:UniChar.255:): "(NULL)"
+  SA_Sanofi_Legal_Entity__c (SA_Sanofi_Legal_Entity__c:UniChar.18:): "(NULL)"
+  SA_Start_Date__c (SA_Start_Date__c:Date:): "(NULL)"
+  SA_External_ID__c (SA_External_ID__c:UniChar.18:): "a7X0T00000006fJUAQ"
+  SA_Justification_for_invalid_status__c (SA_Justification_for_invalid_status__c:UniChar.10000:): "(NULL)"
+  SA_Status__c (SA_Status__c:UniChar.255:): "Valid"
+)
+
+WRITER_1_*_1> WRT_8168 [2024-04-12 17:59:44.874] End loading table [SA_International_Contributor_Request__c: Partition 1] at: Fri Apr 12 17:59:44 2024
+WRITER_1_*_1> WRT_8035 [2024-04-12 17:59:44.914] Load complete time: Fri Apr 12 17:59:44 2024
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: SA_International_Contributor_Request__c: Partition 1 (Instance Name: [SA_International_Contributor_Request__c])
+WRT_8041 Updated rows  - Requested: 100        Applied: 82         Rejected: 18         Affected: 82        
+
+
+WRITER_1_*_1> WRT_8043 [2024-04-12 17:59:44.914] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2024-04-12 17:59:44.914] Writer run completed.
+MANAGER> PETL_24031 [2024-04-12 17:59:44.918] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source_DAL] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source_DAL] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [SA_International_Contributor_Request__c] has completed.
+	Total Run Time = [0.641774] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MANAGER> PETL_24005 [2024-04-12 17:59:44.919] Starting post-session tasks. : (Fri Apr 12 17:59:44 2024)
+POST-SESS> PETL_24091 [2024-04-12 17:59:44.919] Thread [POST-SESS] has the ID [8].
+POST-SESS> CMN_1937 [2024-04-12 17:59:44.920] [Pre/Post Session Command] Starting shell command [dos2unix /infashared/projects/1CRM/PARAMS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.param;dos2unix /infashared/projects/1CRM/SCRIPTS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.sh;sh /infashared/projects/1CRM/SCRIPTS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.sh onecrm_sa_intl_cont].
+POST-SESS> CMN_1942 [2024-04-12 17:59:44.924] [Pre/Post Session Command] Redirected standard error of the shell command to temporary file [/infashared/platform/temp/stderr.0.0.27124.1712937584.920155.txt].
+POST-SESS> CMN_1951 [2024-04-12 17:59:44.925] [Pre/Post Session Command] Started shell command [dos2unix /infashared/projects/1CRM/PARAMS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.param;dos2unix /infashared/projects/1CRM/SCRIPTS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.sh;sh /infashared/projects/1CRM/SCRIPTS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.sh onecrm_sa_intl_cont]. Process id is 27568.
+POST-SESS> CMN_1946 [2024-04-12 17:59:46.947] [Pre/Post Session Command] Process id 27568. Waited 2 seconds for child process of the shell command to exit.
+POST-SESS> CMN_1946 [2024-04-12 17:59:48.949] [Pre/Post Session Command] Process id 27568. Waited 4 seconds for child process of the shell command to exit.
+POST-SESS> CMN_1946 [2024-04-12 17:59:50.951] [Pre/Post Session Command] Process id 27568. Waited 6 seconds for child process of the shell command to exit.
+POST-SESS> CMN_1946 [2024-04-12 17:59:52.955] [Pre/Post Session Command] Process id 27568. Waited 8 seconds for child process of the shell command to exit.
+POST-SESS> CMN_1946 [2024-04-12 17:59:54.957] [Pre/Post Session Command] Process id 27568. Waited 10 seconds for child process of the shell command to exit.
+POST-SESS> CMN_1946 [2024-04-12 17:59:56.959] [Pre/Post Session Command] Process id 27568. Waited 12 seconds for child process of the shell command to exit.
+POST-SESS> CMN_1948 [2024-04-12 17:59:56.959] [Pre/Post Session Command] Process id 27568. The shell command completed successfully.
+POST-SESS> CMN_1954 [2024-04-12 17:59:56.961] [Pre/Post Session Command] Process id 27568. Standard output and error:
+dos2unix: converting file /infashared/projects/1CRM/PARAMS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.param to Unix format ...
+dos2unix: converting file /infashared/projects/1CRM/SCRIPTS/SFA_fdbk_onecrm_crossborder_SA_INTL_CON.sh to Unix format ...
+ObjectId=001Y8X0Z000000000AGF
+SuccFileLoc=/infashared/projects/1CRM/SRCFILES
+SfaFdbkSuccFileName=onecrm_crossborder_SA_INT_CON_SUCC_FDBK.csv
+SfaFdbkSuccDummyFile=/infashared/projects/1CRM/SRCFILES/onecrm_crossborder_SA_INT_CON_SUCC_dummy.csv
+ErrFileLoc=/infashared/platform/error
+SfaFdbkErrFileName=onecrm_crossborder_SA_INT_CON_ERR_FDBK.csv
+SfaFdbkErrDummyFile=/infashared/projects/1CRM/SRCFILES/onecrm_crossborder_SA_INT_CON_ERR_dummy.csv
+SfaFdbkLoc=/infashared/projects/1CRM/SRCFILES
+SuccSfaFdbk=/infashared/projects/1CRM/SRCFILES/onecrm_crossborder_SA_INT_CON_SUCC_FDBK.csv
+ErrSfaFdbk=/infashared/projects/1CRM/SRCFILES/onecrm_crossborder_SA_INT_CON_ERR_FDBK.csv
+Success Feedback File picked=s_mtt_001Y8X0Z000000000AGF_4_12_2024_17_59_standard_success.csv
+Error Feedback Fil
+POST-SESS> CMN_1954 [2024-04-12 17:59:56.961] [Pre/Post Session Command] Process id 27568. Standard output and error:
+e picked=s_mtt_001Y8X0Z000000000AGF_4_12_2024_17_59_standard_error.csv
+
+POST-SESS> CMN_1952 [2024-04-12 17:59:56.965] [Pre/Post Session Command] Deleted temporary file [/infashared/platform/temp/stderr.0.0.27124.1712937584.920155.txt].
+MANAGER> PETL_24029 [2024-04-12 17:59:56.966] Post-session task completed successfully. : (Fri Apr 12 17:59:56 2024)
+MAPPING> SDKS_38510 [2024-04-12 17:59:56.966] SDK target and group deinitialized with status [0].
+MAPPING> SDKS_38025 [2024-04-12 17:59:56.966] Plug-in 500100 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38019 [2024-04-12 17:59:56.966] Writer SDK plug-ins deinitialized with status [0].
+MAPPING> SDKS_38025 [2024-04-12 17:59:56.966] Plug-in 601301 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38018 [2024-04-12 17:59:56.966] Reader SDK plug-ins deinitialized with status [0].
+MAPPING> TM_6018 [2024-04-12 17:59:56.966] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2024-04-12 17:59:57.244] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2024-04-12 17:59:57.244] Session run completed successfully.
+DIRECTOR> TM_6022 [2024-04-12 17:59:57.244] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2024-04-12 17:59:57.244] Source Load Summary.
+DIRECTOR> CMN_1740 [2024-04-12 17:59:57.244] Table: [Source_DAL] (Instance Name: [Source_DAL] Instance UI Name: [Source_DAL])
+	 Output Rows [100], Affected Rows [100], Applied Rows [100], Rejected Rows [0]
+DIRECTOR> TM_6253 [2024-04-12 17:59:57.244] Target Load Summary.
+DIRECTOR> CMN_1740 [2024-04-12 17:59:57.244] Table: [SA_International_Contributor_Request__c] (Instance Name: [SA_International_Contributor_Request__c] Instance UI Name: [Target_VEEVA])
+	 Output Rows [82], Affected Rows [82], Applied Rows [82], Rejected Rows [18]
+DIRECTOR> TM_6023 [2024-04-12 17:59:57.244] 
+===================================================
+
+DIRECTOR> TM_6020 [2024-04-12 17:59:57.244] Session [s_mtt_001Y8X0Z000000000AGF] completed at [Fri Apr 12 17:59:57 2024].
